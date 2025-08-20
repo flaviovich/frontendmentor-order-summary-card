@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub.com](https://github.com/flaviovich/frontendmentor-order-summary-card)
-- [Live Site](https://your-live-site-url.com) *TODO
+- [Live Site](https://flaviovich.github.io/frontendmentor-order-summary-card/)
 
 ## My process
 
