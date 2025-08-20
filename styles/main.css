@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue-50: hsl(225, 100%, 98%);
+  --blue-100: hsl(225, 100%, 94%);
+  --blue-700: hsl(245, 75%, 52%);
+  --blue-950: hsl(223, 47%, 23%);
+  --gray-600: hsl(224, 23%, 55%);
+  --shadow-color: rgba(56, 41, 224, 0.15);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--blue-100);
+  background-image: url(/assets/images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  border-radius: 25px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 100%;
+  display: block;
+}
+
+.card-body {
+  padding: 0 1.5rem;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: 900;
+  margin: 1rem 0;
+}
+
+.card-description {
+  font-size: 16px;
+  margin: 1rem;
+  text-align: center;
+  color: var(--gray-600);
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.plan-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--blue-50);
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.plan-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.plan-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.plan-name {
+  font-weight: 700;
+}
+
+.plan-price {
+  font-weight: 500;
+  color: var(--gray-600);
+}
+
+.plan-change {
+  color: var(--blue-700);
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.plan-change:active {
+  color: hsl(245, 75%, 65%);
+  text-decoration: none;
+}
+
+.card-footer {
+  padding: 1.5rem;
+}
+
+.btn {
+  font-weight: 700;
+  padding: 1rem;
+  width: 100%;
+  border-style: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--blue-700);
+  color: white;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px var(--shadow-color);
+}
+
+.btn-primary:hover {
+  background-color: hsl(245, 75%, 65%);
+}
+
+.btn-secondary {
+  color: var(--gray-600);
+  background-color: transparent;
+}
+
+.btn-secondary:hover {
+  color: var(--blue-950);
+}
+
+@media (width >375px) {
+  body {
+    background-image: url(/assets/images/pattern-background-desktop.svg);
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .card {
+    max-width: 450px;
+    margin: 1rem;
+  }
+
+  .card-title {
+    margin: 0;
+  }
+
+  .card-body {
+    padding: 2rem 3rem;
+  }
+
+  .plan-container {
+    padding: 1.5rem;
+  }
+
+  .plan-details>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .plan-change:hover {
+    color: hsl(245, 75%, 65%);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .card-footer {
+    padding: 0 3rem;
+  }
+
+  .btn-secondary {
+    padding: 2rem 0;
+  }
+}
