@@ -1,0 +1,41 @@
+:root {
+  /* 🎨 Colors */
+  --blue-50: hsl(225, 100%, 98%);
+  --blue-100: hsl(225, 100%, 94%);
+  --blue-hover: hsl(245, 75%, 65%);
+  --blue-700: hsl(245, 75%, 52%);
+  --blue-950: hsl(223, 47%, 23%);
+  --gray-600: hsl(224, 23%, 55%);
+
+  --font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--blue-100);
+  background-image: url(../assets/images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+}
+
+.min-w-350 {
+  min-width: 350px !important;
+}
+
+.plan-container {
+  background-color: var(--blue-50);
+}
+
+.plan-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.btn-primary {
+  background-color: var(--blue-700);
+}
+
+.card-link {
+  color: var(--blue-700);
+}
