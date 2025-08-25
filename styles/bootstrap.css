@@ -32,10 +32,32 @@ body {
   height: 48px;
 }
 
+.card-link {
+  color: var(--blue-700);
+}
+
 .btn-primary {
   background-color: var(--blue-700);
 }
 
-.card-link {
-  color: var(--blue-700);
+@media (width >480px) {
+  body {
+    background-image: url(../assets/images/pattern-background-desktop.svg);
+  }
+}
+
+@media (width >1440px) {
+  .card-link:hover {
+    color: var(--blue-hover);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--blue-hover);
+  }
+
+  .btn-secondary:hover {
+    color: var(--blue-950) !important;
+  }
 }

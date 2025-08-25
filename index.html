@@ -32,32 +32,34 @@
 </head>
 
 <body class="min-vh-100 d-flex flex-column justify-content-center align-items-center pb-4">
-  <main class="container d-flex justify-content-center my-3">
-    <div class="card w-75 min-w-350 rounded-5 overflow-hidden shadow-lg">
-      <img class="card-img-top d-block" src="./assets/images/illustration-hero.svg"
-        alt="Person listening to music with headphones">
-      <div class="card-body px-4">
-        <h1 class="card-title text-center fw-bolder my-3">Order Summary</h1>
-
-        <p class="card-text text-center text-secondary lh-lg fw-semibold">You can now listen to millions of songs,
-          audiobooks, and
-          podcasts on any device anywhere you like!</p>
-
-        <div class="plan-container d-flex justify-content-between align-items-center rounded-3 p-3">
-          <div class="d-flex align-items-center gap-3">
-            <img class="plan-icon" src="./assets/images/icon-music.svg" alt="Music icon" loading="lazy">
-            <div>
-              <p class="fw-bolder mb-0">Annual Plan</p>
-              <p class="text-secondary fw-semibold mb-0">$59.99/year</p>
+  <main class="container">
+    <div class="row my-4 justify-content-center gap-4 gap-md-4 gap-lg-4">
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
+        <div class="card w-75 min-w-350 rounded-5 overflow-hidden shadow-lg px-0">
+          <img class="card-img-top d-block" src="./assets/images/illustration-hero.svg"
+            alt="Person listening to music with headphones">
+          <div class="card-body px-4">
+            <h1 class="card-title text-center fw-bolder my-3">Order Summary</h1>
+            <p class="card-text text-center text-secondary lh-lg fw-semibold">You can now listen to millions of songs,
+              audiobooks, and
+              podcasts on any device anywhere you like!</p>
+            <div class="plan-container d-flex justify-content-between align-items-center rounded-3 p-3">
+              <div class="d-flex align-items-center gap-3">
+                <img class="plan-icon" src="./assets/images/icon-music.svg" alt="Music icon" loading="lazy">
+                <div>
+                  <p class="fw-bolder mb-0">Annual Plan</p>
+                  <p class="text-secondary fw-semibold mb-0">$59.99/year</p>
+                </div>
+              </div>
+              <a class="card-link fw-bolder" href="#" role="button" aria-label="Change subscription plan">Change</a>
             </div>
           </div>
-          <a class="card-link fw-bolder" href="#" role="button" aria-label="Change subscription plan">Change</a>
-        </div>
-      </div>
+          <div class="card-footer px-4 border-top-0 bg-transparent">
+            <button class="btn btn-primary w-100 fw-bolder p-3 rounded-4 shadow">Proceed to Payment</button>
+            <button class="btn btn-secondary w-100 border-0 fw-bolder text-secondary bg-transparent p-3">Cancel Order</button>
+          </div>
 
-      <div class="card-footer px-4 border-top-0 bg-transparent">
-        <button class="btn btn-primary w-100 fw-bolder p-3 rounded-4 shadow">Proceed to Payment</button>
-        <button class="btn w-100 border-0 fw-bolder text-secondary bg-transparent p-3">Cancel Order</button>
+        </div>
       </div>
     </div>
   </main>
