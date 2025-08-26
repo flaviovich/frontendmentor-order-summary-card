@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
-  <link rel="stylesheet" href="./styles/main.css">
   <link rel="icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +14,7 @@
     rel="stylesheet">
 
   <title>Frontend Mentor | Order summary card</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <style>
     .attribution {
       font-size: 11px;
@@ -27,32 +27,44 @@
   </style>
 </head>
 
-<body>
-  <main class="container">
-    <div class="card">
-      <img class="card-image" src="./assets/images/illustration-hero.svg"
+<body
+  class="font-['Red_Hat_Display',_sans-serif] bg-[url('../assets/images/pattern-background-mobile.svg')] md:bg-[url('./assets/images/pattern-background-desktop.svg')] bg-no-repeat bg-contain bg-blue-100 min-h-screen flex flex-col justify-center items-center">
+  <!-- container -->
+  <main class="flex flex-col justify-center items-center gap-6 m-4">
+    <!-- card -->
+    <div class="w-4/5 min-w-[350px] rounded-3xl bg-white overflow-hidden shadow-[0_15px_40px_rgba(0,0,0,0.2)]">
+      <!-- card header -->
+      <img class="w-full block" src="./assets/images/illustration-hero.svg"
         alt="Person listening to music with headphones">
-      <div class="card-body">
-        <h1 class="card-title">Order Summary</h1>
-
-        <p class="card-description">You can now listen to millions of songs, audiobooks, and podcasts on any device
-          anywhere you like!</p>
-
-        <div class="plan-container">
-          <div class="plan-details">
-            <img class="plan-icon" src="./assets/images/icon-music.svg" alt="Music icon" loading="lazy">
+      <!-- card body -->
+      <div class="px-6">
+        <!-- card title -->
+        <h2 class="text-2xl text-center font-black mt-8">Order Summary</h2>
+        <!-- card text -->
+        <p class="text-[hsl(224,23%,55%)] text-center leading-7 p-5">You can now listen to millions of songs,
+          audiobooks, and podcasts on any device anywhere you like!</p>
+        <!-- plan -->
+        <div class="flex items-center justify-between bg-blue-50 rounded-lg p-4">
+          <div class="flex items-center gap-5">
+            <img class="w-[48px] h-[48px]" src="./assets/images/icon-music.svg" alt="Music icon" loading="lazy">
             <div>
-              <p class="plan-name">Annual Plan</p>
-              <p class="plan-price">$59.99/year</p>
+              <p class="font-black">Annual Plan</p>
+              <p class="text-[hsl(224,23%,55%)] font-semibold">$59.99/year</p>
             </div>
           </div>
-          <a class="plan-change" href="#" role="button" aria-label="Change subscription plan">Change</a>
+          <!-- plan link -->
+          <a class="text-[hsl(245,75%,52%)] text-sm font-bold underline hover:text-[hsl(245,75%,65%)] hover:no-underline focus:outline-2 focus:outline-[hsl(245,75%,65%)] focus:outline-offset-2 active:text-[hsl(245,75%,65%)]"
+            href="#" role="button" aria-label="Change subscription plan">Change</a>
         </div>
       </div>
-
-      <div class="card-footer">
-        <button class="btn btn-primary">Proceed to Payment</button>
-        <button class="btn btn-secondary">Cancel Order</button>
+      <!-- card footer -->
+      <div class="p-6">
+        <button
+          class="w-full font-extrabold p-4 text-white bg-[hsl(245,75%,52%)] rounded-lg shadow-[0_10px_30px_5px_rgba(56,41,224,0.25)] hover:bg-[hsl(245,75%,65%)] focus:outline-2 focus:outline-offset-2 focus:outline-[hsl(245,75%,52%)] active:bg-[hsl(245,75%,65%)]">Proceed
+          to Payment</button>
+        <button
+          class="w-full font-extrabold p-4 text-[hsl(224,23%,55%)] bg-transparent rounded-lg mt-2 hover:text-black focus:outline-2 focus:outline-offset-2 focus:outline-[hsl(224,23%,55%)] active:text-black">Cancel
+          Order</button>
       </div>
     </div>
   </main>
