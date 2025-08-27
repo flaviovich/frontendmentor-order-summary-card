@@ -28,11 +28,12 @@
 </head>
 
 <body
-  class="font-['Red_Hat_Display',_sans-serif] bg-[url('../assets/images/pattern-background-mobile.svg')] md:bg-[url('./assets/images/pattern-background-desktop.svg')] bg-no-repeat bg-contain bg-blue-100 min-h-screen flex flex-col justify-center items-center">
+  class="font-['Red_Hat_Display',_sans-serif] bg-[url('../assets/images/pattern-background-mobile.svg')] md:bg-[url('./assets/images/pattern-background-desktop.svg')] bg-no-repeat bg-contain bg-blue-100 min-h-dvh flex flex-col justify-center items-center pb-4">
   <!-- container -->
-  <main class="flex flex-col justify-center items-center gap-6 m-4">
+  <main class="flex flex-wrap flex-col md:flex-row justify-center items-center gap-6 mt-10 mb-6">
     <!-- card -->
-    <div class="w-4/5 min-w-[350px] rounded-3xl bg-white overflow-hidden shadow-[0_15px_40px_rgba(0,0,0,0.2)]">
+    <div
+      class="w-full max-w-[380px] min-w-[340px] rounded-3xl bg-white overflow-hidden shadow-[0_15px_40px_rgba(0,0,0,0.2)]">
       <!-- card header -->
       <img class="w-full block" src="./assets/images/illustration-hero.svg"
         alt="Person listening to music with headphones">
@@ -41,7 +42,8 @@
         <!-- card title -->
         <h2 class="text-2xl text-center font-black mt-8">Order Summary</h2>
         <!-- card text -->
-        <p class="text-[hsl(224,23%,55%)] text-center leading-7 p-5">You can now listen to millions of songs,
+        <p class="font-medium text-[hsl(224,23%,55%)] text-center leading-7 p-4 mb-2">You can now listen to millions of
+          songs,
           audiobooks, and podcasts on any device anywhere you like!</p>
         <!-- plan -->
         <div class="flex items-center justify-between bg-blue-50 rounded-lg p-4">
